@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <title>Apotek</title>
+        <link rel = "stylesheet" type="text/css" href = "css/apotek.css"></link> 
+        <script type = "text/javascript" src = "scripts/jquery-1.7.2.min.js"></script>
+        <script type = "text/javascript" src = "scripts/apotek.js"></script>
+    </head>
+    <body>
+        <div id ="wrapper">
+            <div id ="header">
+                <h1>Apotekssök</h1>
+                <p>Här kan du söka efter olika apotek i Sverige</p>
+            </div>
+
+            <div id ="content">
+                <p>
+                    <label>Sök på ort : <input id = "searchplacename" type = "text" /></label>
+                    <input id ="getapotekbutton" type = "button"  value = "Sök på namn"/> - 
+                    <label>Sök på postnummer : <input id = "searchzip" type = "text" /></label>
+                    <input id ="getapotekbyzipbutton" type = "button"  value = "Sök på postnummer"/>
+                    <label>Sök på apoteksbolag : <input id = "searchname" type = "text" /></label>
+                    <input id ="getapotekbynamebutton" type = "button"  value = "Sök på apoteksnamn"/>
+                </p>
+                <table id ="apotektable">
+                    <thead>
+                        <tr>
+                            <th>Län</th>
+                            <th>Kommun</th>
+                            <th>Försäljningsställe</th>
+                            <th>Adress</th>
+                            <th>Postnummer</th>
+                            <th>Ort</th>
+                            <th>Apoteksbolag</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
